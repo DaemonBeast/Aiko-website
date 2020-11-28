@@ -35,6 +35,8 @@ header {
 
 h1 {
     height: 30px;
+
+    animation: float-up 1s forwards;
 }
 
 nav {
@@ -44,6 +46,8 @@ nav {
 
 nav a {
     margin-right: 40px;
+
+    animation: float-up 1s forwards;
 }
 
 nav .link i {
@@ -85,6 +89,7 @@ nav .active {
 
     text-decoration: none;
     transition: 0.2s;
+    animation: float-up 1s forwards;
 }
 
 .button:hover {
@@ -130,7 +135,7 @@ nav .active {
 .pulse {
     margin: 40px;
 
-    animation: pulse 2s infinite;
+    animation: pulse 2s infinite, float-up 1s forwards;
 }
 
 .rounded {
@@ -158,6 +163,21 @@ nav .active {
 
     100% {
         box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes float-up {
+    0% {
+        position: relative;
+        top: 50px;
+
+        opacity: 0;
+    }
+
+    100% {
+        top: -50px;
+
+        opacity: 1;
     }
 }
 
