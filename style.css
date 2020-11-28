@@ -59,7 +59,7 @@ nav .link {
 
     color: #007bff;
 
-    box-shadow: 0 40px 0 #007bff;
+    box-shadow: 0 45px 0 #007bff;
 
     text-decoration: none;
     transition: 0.2s;
@@ -107,6 +107,16 @@ nav .active {
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
+.link.premium {
+    color: #ab9b35;
+
+    box-shadow: 0 45px 0 #ab9b35;
+}
+
+.link.premium:hover, .link.premium.active {
+    box-shadow: 0 35px 0 #ab9b35;
+}
+
 .fluid {
     width: 100%;
     margin-top: 15vh;
@@ -133,9 +143,17 @@ nav .active {
     font-size: 25px;
 }
 
+.title {
+    height: auto;
+
+    color: #ffffff;
+
+    font-size: min(15vw, 100px);
+}
+
 @keyframes pulse {
     0% {
-        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5);
     }
 
     100% {
